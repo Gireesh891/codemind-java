@@ -6,14 +6,13 @@ class java
         Scanner sc=new Scanner(System.in);
         int r;
         r=sc.nextInt();
-        for(int i=r;i>=1;i--)
+        for(int i=1;i<=r;i++)
         {
-            for(int j=1;j<=i;j++)
+            for(int j=r;j>=1;j--)
             {
-            System.out.print(((char)(64+i))+" ");
+                System.out.print(j+" ");
             }
             System.out.println();
         }
-        
     }
 }
