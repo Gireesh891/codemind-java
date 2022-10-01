@@ -17,7 +17,7 @@ class java
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int a,b,c=0;
+        int a,b,count=0;
         a=sc.nextInt();
         b=sc.nextInt();
         if(a==1)
@@ -25,11 +25,10 @@ class java
         for(int i=a;i<=b;i++)
         {
             if(isprime(i))
-            {
-                c++;
-            }
+            count++;
+            
         }
-        System.out.println(c);
+        System.out.println(count);
         
     }
 }
