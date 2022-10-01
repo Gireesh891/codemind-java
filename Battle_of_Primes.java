@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class java
 {
-    public static  boolean isprime(int n)
+    public static boolean isprime(int n)
     {
         int count=0;
         for(int i=2;i<=(int)Math.sqrt(n);i++)
@@ -28,6 +28,7 @@ class java
             break;
         }
         System.out.println(count);
+        
         
     }
 }
