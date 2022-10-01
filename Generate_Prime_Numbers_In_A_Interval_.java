@@ -1,12 +1,12 @@
 import java.util.Scanner;
 class java
 {
-    public static boolean isprime(int a)
+    public static boolean isprime(int n)
     {
         int count=0;
-        for(int i=2;i<=Math.sqrt(a);i++)
+        for(int i=2;i<=(int)Math.sqrt(n);i++)
         {
-            if(a%i==0)
+            if(n%i==0)
             count++;
         }
         if(count==0)
@@ -17,21 +17,16 @@ class java
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,m;
-        n=sc.nextInt();
-        m=sc.nextInt();
-        if(n==1)
-        n=2;
-        for(int i=n;i<=m;i++)
+        int a,b,c=0,count=0;
+        a=sc.nextInt();
+        b=sc.nextInt();
+        if(a==1)
+        a=2;
+        for(int i=a;i<b;i++)
         {
             if(isprime(i))
-            {
-            System.out.println(i);
-        
-            }
-            
+        System.out.println(i);
         }
         
     }
-    
 }
