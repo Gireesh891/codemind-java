@@ -4,14 +4,15 @@ class java
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,r=0,sum=0,len=0,temp=0;
+        int n,r=0,sum=0,len=0,b=0,temp=0;
         n=sc.nextInt();
         temp=n;
         len=(int)(Math.log10(n)+1);
         while(n>0)
         {
             r=n%10;
-            sum=sum+(int)Math.pow(r,len);
+            b=(int)Math.pow(r,len);
+            sum=sum+b;
             len--;
             n=n/10;
             
@@ -20,5 +21,6 @@ class java
         System.out.println("True");
         else
         System.out.println("False");
+        
     }
 }
