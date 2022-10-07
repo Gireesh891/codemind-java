@@ -4,24 +4,29 @@ class java
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int x[],n,i,j;
+        int x[],n,even[],odd[],j=0,k=0;
         n=sc.nextInt();
         x=new int[n];
-        for(i=0;i<n;i++)
+        for(int i=0;i<n;i++)
+        {
         x[i]=sc.nextInt();
-        for(i=0;i<n;i++)
+        }
+        even=new int[n];
+        odd=new int[n];
+        for(int i=0;i<n;i++)
         {
             if(x[i]%2==0)
             {
-                System.out.print(x[i]+" ");
+                even[j++]=x[i];
             }
-        }
-        for(j=0;j<n;j++)
-        {
-            if(x[j]%2!=0)
+            else
             {
-                System.out.print(x[j]+" ");
+                odd[k++]=x[i];
             }
         }
+        for(int i=0;i<j;i++)
+        System.out.print(even[i]+" ");
+        for(int i=0;i<k;i++)
+        System.out.print(odd[i]+" ");
     }
 }
