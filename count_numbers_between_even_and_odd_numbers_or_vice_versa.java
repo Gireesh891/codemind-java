@@ -4,7 +4,7 @@ class java
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,x[],c=0;
+        int n,x[],count=0;
         n=sc.nextInt();
         x=new int[n];
         for(int i=0;i<n;i++)
@@ -15,10 +15,10 @@ class java
         {
             if(x[i-1]%2==0 && x[i+1]%2!=0 || x[i-1]%2!=0 && x[i+1]%2==0)
             {
-                c++;
+                count++;
             }
+           
         }
-        System.out.println(c);
+        System.out.println(count);
     }
-        
-    }
+}
