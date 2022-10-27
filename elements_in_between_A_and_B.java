@@ -4,7 +4,7 @@ class java
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,x[],a,b,count=0;
+        int n,x[],a,b,sum=0,count=0;
         n=sc.nextInt();
         x=new int[n];
         for(int i=0;i<n;i++)
@@ -23,5 +23,7 @@ class java
         }
         if(count==0)
         System.out.println("-1");
+            
+        
     }
 }
