@@ -17,7 +17,7 @@ class java
             {
                 for(int j=0;j<n;j++)
                 {
-                    if(x[j]==x[i] && i!=j)
+                    if(x[i]==x[j] && i!=j)
                     {
                         x[j]=-1;
                     }
@@ -29,5 +29,6 @@ class java
             }
         }
         System.out.println(count);
+        
     }
 }
